@@ -70,7 +70,7 @@ translateForm.addEventListener("submit", function (event) {
   const toLang = toLangSelect.value;
   const text = textInput.value.trim();
 
-  // XAQIIJIN (VALIDATION): qoraalka waa lama huraan
+
   if (text === "") {
     translatedText.textContent = "Please enter some text to translate.";
     translatedText.classList.add("error");
