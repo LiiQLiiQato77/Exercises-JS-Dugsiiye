@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "name": "Real_Dhagax",
+    "username": "@eng-dhagax",
+    "age": 20,
+    "city": "Afgoi",
+
+    "orders": [
+        {"id": 1, "product": "Jacket", "price": 25},
+        {"id": 2, "product": "jeans", "price": 30}
+    ]
+}
