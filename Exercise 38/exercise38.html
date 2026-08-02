@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 38 – Responsive Navigation with Smooth Scrolling</title>
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="exercise38.css">
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Real <span>Dhagax</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#" class="nav-link active" data-section="home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link" data-section="about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link" data-section="projects">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link" data-section="contact">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link" data-section="login">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Mobile Menu -->
+
+            <div class="menu-btn">
+
+            <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section id="home" class="page active-section">
+
+        <div class="overlay">
+
+            <h1>Welcome To Real Dhagax</h1>
+
+            <p>
+                This is the Home Section.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="page">
+
+        <div class="overlay">
+
+            <h1>About Me</h1>
+
+            <p>
+                Learn more about Real Dhagax.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="projects" class="page">
+
+        <div class="overlay">
+
+            <h1>Projects</h1>
+
+            <p>
+                My JavaScript practice projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="page">
+
+        <div class="overlay">
+
+            <h1>Contact</h1>
+
+            <p>
+
+                Get in touch with me.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section id="login" class="page">
+
+        <div class="overlay">
+
+            <h1>Login</h1>
+
+            <form class="login-form">
+
+                <input
+                    type="email"
+                    placeholder="Email"
+                >
+
+                <input
+                    type="password"
+                    placeholder="Password"
+                >
+
+                <button>
+
+                    Login
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <script src="exercise38.js"></script>
+
+</body>
+</html>
