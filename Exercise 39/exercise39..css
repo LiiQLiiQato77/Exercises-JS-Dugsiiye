@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;     
+  justify-content: center;  
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  padding: 40px 20px;
+}
+
+.translator-card {
+  width: 100%;
+  max-width: 640px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 40px 44px;
+}
+
+.translator-card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 32px;
+}
+
+.translator-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 28px 0 10px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #111;
+}
+
+select {
+  height: 48px;
+  cursor: pointer;
+}
+
+textarea {
+  font-family: "Courier New", Courier, monospace;
+  resize: vertical;
+  min-height: 110px;
+  margin-top: 8px;
+}
+
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+#translateBtn {
+  width: 100%;
+  margin-top: 28px;
+  padding: 15px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#translateBtn:hover {
+  background: #439a46;
+}
+
+#translateBtn:disabled {
+  background: #9bc99d;
+  cursor: not-allowed;
+}
+
+#translatedText {
+  font-size: 1.05rem;
+  min-height: 1.4em;
+  margin: 0;
+}
+
+#translatedText.error {
+  color: #c0392b;
+}

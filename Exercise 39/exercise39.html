@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise 39</title>
+<link rel="stylesheet" href="exercise39..css">
+</head>
+<body>
+
+  <main class="translator-card">
+    <h1>Language Translator</h1>
+
+    <form id="translateForm">
+
+      <label for="fromLang">From:</label>
+
+      <select id="fromLang">
+        <option value="auto">Auto-detect</option>
+      </select>
+
+      <label for="toLang">To:</label>
+      <select id="toLang">
+        <option value="so">Somali</option>
+      </select>
+
+      <label for="textInput">Text to Translate:</label>
+      <textarea id="textInput" rows="5" placeholder="Type something..." required></textarea>
+
+      <button type="submit" id="translateBtn">Translate</button>
+    </form>
+
+    <h2>Translated Text:</h2>
+    <p id="translatedText"></p>
+  </main>
+
+  <script src="exercise39..js"></script>
+</body>
+</html>
