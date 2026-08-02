@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 16px */
+    margin: 0;
+    /* padding: 0; */
+    padding: 40px 20px 80px;
+    
+}
+
+.h1Title {
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 0 0 30px;
+}
+
+.card {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    background-color: white;
+    padding: 30px 40px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.headerTitle {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+#postForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#postTitle,
+#postImage,
+#postBody {
+    width: 100%;
+    border: 1px solid #333;
+    background-color: #fff;
+    padding: 12px 14px;
+
+    /* margin-bottom: 10px; */
+
+    font-size: 1rem;
+    font-family: inherit;
+    color: #111;
+}
+
+#postBody {
+    font-family: 'Courier New', Courier, monospace;
+    resize: vertical;
+    min-height: 150px;
+}
+
+#postTitle::placeholder,
+#postImage::placeholder,
+#postBody::placeholder {
+    color: #555;
+}
+
+#postBtnS {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    background-color: white;
+    color: #111;
+    cursor: pointer;
+}
+
+#postBtnS:hover {
+    background-color: #f5f5f5;
+}
+
+.postList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-item{
+    border:1px solid #ddd;
+    padding:20px;
+    border-radius:8px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+
+    /* padding: 20px; */
+}
+
+.post-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 12px;
+}
+
+.post-image {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 12px;
+
+  border-radius: 10px;
+}
+
+.post-body {
+  margin: 0 0 14px;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+.post-actions button {
+    padding: 6px 16px;
+    background-color: #fff;
+    color: #111;
+    font-size: 0.9rem;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.post-actions button:hover {
+    background-color: #eee;
+}
+
+.empty-state {
+  text-align: center;
+  color: #777;
+  padding: 10px 0;
+}

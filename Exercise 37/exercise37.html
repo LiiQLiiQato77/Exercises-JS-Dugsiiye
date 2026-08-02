@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 37</title>
+
+  <link rel="stylesheet" href="exercise37.css">
+</head>
+<body>
+  <h1 class="h1Title">Simple Blog</h1>
+
+  <main class="card">
+    <h2 class="headerTitle">Create a New Post</h2>
+
+    <form id="postForm">
+      <input type="text" name="text" id="postTitle" placeholder="Post Title" autocomplete="off">
+
+      <input type="url" name="url" id="postImage" placeholder="Image URL (Option)" autocomplete="off">
+      
+      <textarea name="textarea" id="postBody" rows="6" placeholder="Write your post here..."></textarea>
+
+      <button type="submit" id="postBtnS"> Add Post</button>
+    </form>
+  </main>
+
+  <section class="card">
+    <h2 class="headerTitle">All Posts</h2>
+
+    <div class="postList">
+
+    </div>
+  </section>
+  
+  <script src="exercise37.js"></script>
+</body>
+</html>
