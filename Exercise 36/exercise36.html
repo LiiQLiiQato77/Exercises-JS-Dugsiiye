@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #36</title>
+
+    <style>
+        #colorPreview {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #colorHistory {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #colorHistory li {
+            margin: 6px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise 36 – Interactive Color Picker with Preview and History</h1>
+
+    <h1>Interactive Color Picker</h1>
+
+    <label for="chooseColor">Choose Color:</label>
+    <input type="color" name="chooseColor" id="chooseColor"> <br><br>
+
+    <div id="colorPreview">Color Preview</div>
+
+    <h2>Color History</h2>
+    <ul id="colorHistory"></ul>
+
+    <button id="clearHistoryButton">Clear History</button>
+
+    <script src="exercie36.js"></script>
+</body>
+</html>
